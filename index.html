@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en" style='scroll-behavior: smooth;'>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + React + TS</title>
+    <style>#app {display:none;}</style>
+  </head>
+  <body class="light:bg-white dark:bg-black">
+    <div id="app"><!--ssr-outlet--></div>
+    <script type="module" src="/src/entry-client.tsx"></script>
+    <script type="module" src="./node_modules/preline/dist/preline.js"></script>
+    <script src="/scripts/dark-mode.js"></script>
+  </body>
+</html>

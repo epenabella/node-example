@@ -1,0 +1,78 @@
+{
+	"components": {
+		"examples": {},
+		"headers": {},
+		"parameters": {},
+		"requestBodies": {},
+		"responses": {},
+		"schemas": {
+			"UserProfile": {
+				"properties": {
+					"Id": {
+						"type": "string"
+					},
+					"CreatedAt": {
+						"type": "string",
+						"format": "date-time"
+					},
+					"UpdatedAt": {
+						"type": "string",
+						"format": "date-time"
+					},
+					"DeletedAt": {
+						"type": "string",
+						"format": "date-time"
+					},
+					"FirstName": {
+						"type": "string"
+					},
+					"LastName": {
+						"type": "string"
+					}
+				},
+				"required": [
+					"Id",
+					"CreatedAt"
+				],
+				"type": "object",
+				"additionalProperties": false
+			}
+		},
+		"securitySchemes": {}
+	},
+	"info": {
+		"title": "swazadmin",
+		"version": "0.0.0",
+		"contact": {}
+	},
+	"openapi": "3.0.0",
+	"paths": {
+		"/api/user-profiles": {
+			"get": {
+				"operationId": "GetUsers",
+				"responses": {
+					"200": {
+						"description": "Ok",
+						"content": {
+							"application/json": {
+								"schema": {
+									"items": {
+										"$ref": "#/components/schemas/UserProfile"
+									},
+									"type": "array"
+								}
+							}
+						}
+					}
+				},
+				"security": [],
+				"parameters": []
+			}
+		}
+	},
+	"servers": [
+		{
+			"url": "/"
+		}
+	]
+}

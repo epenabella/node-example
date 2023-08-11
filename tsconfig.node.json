@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "composite": true,
+    "skipLibCheck": true,
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "allowSyntheticDefaultImports": true,
+
+    /*CUSTOM*/
+    "declaration": true,
+    "removeComments": true,
+    "esModuleInterop": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,    
+    // "useDefineForClassFields": true,
+    // "lib": ["ES2020", "DOM", "DOM.Iterable"],
+
+    /* Bundler mode */
+    // "allowImportingTsExtensions": true,
+    // "resolveJsonModule": true,
+    // // "isolatedModules": true,
+    // "noEmit": true,
+
+    /*  CUSTOM */
+    // "declaration": true,
+    // "removeComments": true,
+    // "esModuleInterop": true,
+    // "emitDecoratorMetadata": true,
+    // "experimentalDecorators": true,
+
+  },
+  "include": ["vite.config.ts", "express-plugin.ts"]
+}

@@ -1,0 +1,55 @@
+@media (max-width: 991.98px) {
+
+     .animated-icon1 {
+       width: 30px;
+       height: 20px;
+       position: relative;
+       margin: 0px;
+       transform: rotate(0deg);
+       transition: .5s ease-in-out;
+       cursor: pointer;
+     }
+     
+       .animated-icon1 span {
+           display: block;
+           position: absolute;
+           height: 3px;
+           width: 100%;
+           border-radius: 9px;
+           opacity: 1;
+           left: 0;
+           transform: rotate(0deg);
+           transition: .25s ease-in-out;
+       }
+     
+     //   .animated-icon1 span {
+     //       background: var(--theme-color-1);
+     //   }
+     
+           .animated-icon1 span:nth-child(1) {
+               top: 0px;
+           }
+     
+           .animated-icon1 span:nth-child(2) {
+               top: 10px;
+           }
+     
+           .animated-icon1 span:nth-child(3) {
+               top: 20px;
+           }
+     
+       button.open .animated-icon1 span:nth-child(1) {
+           top: 11px;
+           transform: rotate(135deg);
+       }
+     
+       button.open .animated-icon1 span:nth-child(2) {
+           opacity: 0;
+           /*left: -60px;*/
+       }
+     
+       button.open .animated-icon1 span:nth-child(3) {
+           top: 11px;
+           transform: rotate(-135deg);
+       }
+     }
